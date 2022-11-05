@@ -1,10 +1,13 @@
 import React from "react";
+import Home from "./pages/Home";
+import Landing from "./pages/Landing";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-9xl italic">YelpCamp</h1>
-    </div>
+    <>
+      {/* <Home /> */}
+      <Landing />
+    </>
   );
 }
 
