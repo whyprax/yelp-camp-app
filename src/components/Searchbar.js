@@ -7,7 +7,7 @@ const Searchbar = () => {
       <h1 className="text-black font-bold text-4xl sm:text-5xl mr-4">
         Welcome to YelpCamp!
       </h1>
-      <p className="text-black opacity-60 mt-4 mb-5 lg:mt-5 text-[1.15rem] sm:text-xl sm:mr-12 lg:mr-[33.25rem]">
+      <p className="text-black opacity-60 mt-4 mb-5 lg:mt-5 text-[1.15rem] sm:text-xl sm:mr-12 lg:w-[45%]">
         View our hand-picked campgrounds from all over the world, or add your
         own.
       </p>
