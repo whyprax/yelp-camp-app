@@ -28,7 +28,7 @@ const Home = () => {
   }, [windowSize]);
 
   return (
-    <div className="bg-[#f9f6f1] flex lg:flex-row flex-col h-full lg:h-screen text-gray-500 ">
+    <div className="bg-[#f9f6f1] flex lg:flex-row flex-col h-full lg:h-screen text-gray-500">
       <div className="block lg:hidden">
         <img
           className="w-fit px-8 py-4 sm:px-16 sm:py-8"
@@ -66,7 +66,7 @@ const Home = () => {
                 See locations for all camps
               </li>
             </ul>
-            <button className="bg-black text-white font-bold rounded mt-3 py-4 px-6">
+            <button className="bg-black text-white font-bold rounded mt-3 py-3 px-5">
               View Campgrounds
             </button>
             <span className="block font-semibold mt-8 mb-2">
