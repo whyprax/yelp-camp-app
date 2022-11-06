@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Searchbar from "../components/Searchbar";
 import Cards from "../components/Cards";
 import Footer from "../components/Footer";
+import AddCamp from "./AddCamp";
 
 const Landing = () => {
   return (
