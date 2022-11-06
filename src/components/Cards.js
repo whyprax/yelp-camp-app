@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Camps } from "../data/CardsData";
 
 const Cards = () => {
@@ -11,11 +12,15 @@ const Cards = () => {
             src={Camp.img}
             alt=""
           />
-          <h1 className="text-black text-3xl font-bold mt-5 mb-3">{Camp.name}</h1>
+          <h1 className="text-black text-3xl font-bold mt-5 mb-3">
+            {Camp.name}
+          </h1>
           <p className="text-gray-600 w-auto mb-4">{Camp.desc}</p>
-          <button className="bg-black text-white w-full rounded p-3 mb-2">
-            View CampGround
-          </button>
+          <Link to="/campdetails">
+            <button className="bg-black text-white w-full rounded p-3 mb-2">
+              View CampGround
+            </button>
+          </Link>
         </div>
       ))}
     </div>

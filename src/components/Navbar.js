@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../Assets/Logo.svg";
 import HamburgerMenu from "../Assets/HamburgerMenu.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -9,13 +10,19 @@ const Navbar = () => {
     <div className="flex justify-between flex-col text-gray-500">
       <div className="flex justify-between items-center">
         <div className="flex gap-6 items-center">
-          <img className="w-fit" src={Logo} alt="yelpcamp-logo" />
-          <span className="font-semibold cursor-pointer hidden lg:block">
-            Home
-          </span>
+          <Link to="/landing">
+            <img className="w-fit" src={Logo} alt="yelpcamp-logo" />
+          </Link>
+          <Link to="/">
+            <span className="font-semibold cursor-pointer hidden lg:block">
+              Home
+            </span>
+          </Link>
         </div>
         <div className="hidden lg:flex gap-6 items-center">
-          <button className="font-semibold cursor-pointer">Log In</button>
+          <Link to="/login">
+            <button className="font-semibold cursor-pointer">Log In</button>
+          </Link>
           <button className="bg-black text-white font-bold rounded py-3 px-5">
             Create an Account
           </button>

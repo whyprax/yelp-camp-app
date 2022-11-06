@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Assets/Logo.svg";
 import UserTestimonial from "../Assets/User Testimonial.svg";
 
@@ -9,24 +10,26 @@ const Login = () => {
       <div className="basis-2/4 lg:basis-7/12 px-6 sm:px-14 lg:px-32 py-6 mb-4">
         <div className="flex justify-between items-center mb-12 lg:mb-36">
           <img className="w-fit" src={Logo} alt="yelpcamp-logo" />
-          <a
-            href="#"
-            className="flex justify-center items-center gap-1 font-semibold cursor-pointer "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-5 h-5"
+          <Link to="/landing">
+            <a
+              href="#"
+              className="flex justify-center items-center gap-1 font-semibold cursor-pointer "
             >
-              <path
-                fillRule="evenodd"
-                d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Back to Campgrounds
-          </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              Back to Campgrounds
+            </a>
+          </Link>
         </div>
         <form className="flex flex-col">
           <h1 className="text-black text-3xl sm:text-4xl lg:text-5xl font-bold pr-16 sm:pr-0 lg:pr-4 mb-10 sm:mb-8">

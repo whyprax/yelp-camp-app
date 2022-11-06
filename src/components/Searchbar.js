@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Searchbar = () => {
   return (
@@ -24,12 +25,14 @@ const Searchbar = () => {
         />
       </form>
       <button className="my-6">
-        <a
-          className="text-black opacity-60 text-xl underline mr-[44rem]"
-          href="#"
-        >
-          Or add your own background
-        </a>
+        <Link to="/addcamp">
+          <a
+            className="text-black opacity-60 text-xl underline mr-[44rem]"
+            href="#"
+          >
+            Or add your own background
+          </a>
+        </Link>
       </button>
     </div>
   );

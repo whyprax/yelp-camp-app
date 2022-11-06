@@ -7,6 +7,7 @@ import Checkmark from "../Assets/Checkmark.svg";
 import Airbnb from "../Assets/Airbnb.svg";
 import Booking from "../Assets/Booking.svg";
 import PlaumGuide from "../Assets/Plum Guide.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -29,7 +30,7 @@ const Home = () => {
 
   return (
     <div className="bg-[#f9f6f1] flex lg:flex-row flex-col h-full lg:h-screen text-gray-500 pl-6 sm:pl-14 lg:pl-32">
-      <div className="block lg:hidden">
+      <div className="w-fit block lg:hidden cursor-pointer">
         <img
           className="w-fit px-8 py-4 sm:px-16 sm:py-8"
           src={Logo}
@@ -66,9 +67,11 @@ const Home = () => {
                 See locations for all camps
               </li>
             </ul>
-            <button className="bg-black text-white font-bold rounded mt-3 py-3 px-5">
-              View Campgrounds
-            </button>
+            <Link to="/landing">
+              <button className="bg-black text-white font-bold rounded mt-3 py-3 px-5">
+                View Campgrounds
+              </button>
+            </Link>
             <span className="block font-semibold mt-8 mb-2">
               Partnered with:
             </span>
